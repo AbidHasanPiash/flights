@@ -1,6 +1,7 @@
 import Nav from '@/components/common/Nav'
 import './globals.css'
 import { Inter } from 'next/font/google'
+import Hero from '@/components/hero/Hero'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,7 +15,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${inter.className} `}>
         <Nav/>
-        <main className='lg:max-w-7xl'>
+        <Hero/>
+        <main className='spacing'>
           {children}
         </main>
       </body>

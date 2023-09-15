@@ -5,7 +5,7 @@ import Image from 'next/image'
 export default function Nav() {
   return (
     <nav className='h-20 bg-primary text-day'>
-        <div className='lg:max-w-6xl h-full px-8 mx-auto flex items-center justify-between'>
+        <div className='h-full spaceing flexBetween'>
             <div>
                 <Image
                     src={'/logos/brac-logo.png'}
