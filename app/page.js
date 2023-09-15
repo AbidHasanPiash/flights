@@ -1,10 +1,9 @@
-import Hero from '@/components/hero/Hero'
-import Image from 'next/image'
+import HotDeals from '@/components/body/HotDeals'
 
 export default function Home() {
   return (
-    <section>
-      
+    <section className='pt-24 space-x-24'>
+      <HotDeals/>
     </section>
   )
 }
