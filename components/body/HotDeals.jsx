@@ -15,9 +15,12 @@ export default function HotDeals() {
             </div>
         </div>
         <div className='py-6 grid md:grid-cols-2 gap-3'>
-            <div className='w-full h-72 rounded-xl bg-[url("/images/airplane1.jpg")] bg-cover'>
+            <div className='w-full h-72 rounded-xl bg-[url("/images/airplane1.jpg")] bg-cover overflow-hidden'>
+                <div className='w-full h-full bg-gradient-to-br from-primary-light/80 to-transparent'>
+                    <h1 className='px-8 py-5 text-3xl text-white'>Get Air Ticket At <br /> Lowest Price</h1>
+                </div>
             </div>
-            <div className='w-full h-72 rounded-xl bg-[url("/images/airplane2.jpg")] bg-cover'>
+            <div className='w-full h-72 rounded-xl bg-[url("/images/airplane2.jpg")] bg-cover overflow-hidden'>
             </div>
         </div>
     </section>
