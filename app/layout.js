@@ -14,9 +14,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${inter.className} `}>
-        <Nav/>
-        <Hero/>
-        <main className='spaceing'>
+        <main>
+          <Nav/>
           {children}
         </main>
       </body>
