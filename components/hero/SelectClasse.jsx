@@ -3,8 +3,8 @@ import React, { useState } from 'react'
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 
-export default function SelectAirport({flightOptions}) {
-    const [value, setValue] = useState(flightOptions[0]);
+export default function SelectClasse({classeOptions}) {
+    const [value, setValue] = useState(classeOptions[0]);
     const [inputValue, setInputValue] = useState('');
 
     const customStyles = {
@@ -29,7 +29,7 @@ export default function SelectAirport({flightOptions}) {
             setInputValue(newInputValue);
         }}
         id="controllable-states-demo"
-        options={flightOptions}
+        options={classeOptions}
         sx={{ ...customStyles }}
         className='w-full'
         renderInput={(params) => <TextField {...params} />}

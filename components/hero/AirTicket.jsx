@@ -4,6 +4,8 @@ import { MdOutlineFlightLand, MdOutlineFlightTakeoff, MdOutlineCalendarMonth } f
 import { LuSearch } from 'react-icons/lu'
 import ButtonLight from '../common/ButtonLight'
 import SelectAirport from './SelectAirport'
+import SelectClasse from './SelectClasse'
+import SelectPassenger from './SelectPassenger'
 
 export default function AirTicket() {
     const tripOptions = ['One Way','Round Way','Multi City']
@@ -17,6 +19,18 @@ export default function AirTicket() {
         'DXB, Dubai Intl Aitport',
         'ZYL, Osmani International Airport',
         'LCY, London City Airport',
+    ];
+    const classeOptions = [
+        'Economy',
+        'Premium Economy',
+        'Business',
+        'First Class',
+    ];
+    const passengerOptions = [
+        '1 Passenger',
+        '2 Passenger',
+        '3 Passenger',
+        '4 Passenger',
     ];
   return (
     <div className='spaceing space-y-4'>
@@ -72,12 +86,12 @@ export default function AirTicket() {
                 <div className='col-span-3 grid grid-cols-1 gap-2'>
                     <div className='px-4 rounded-lg bg-white'>
                         <div className='h-12 flexStart'>
-                            Economy
+                            <SelectClasse classeOptions={classeOptions}/>
                         </div>
                     </div>
                     <div className='px-4 rounded-lg bg-white'>
                         <div className='h-12 flexStart'>
-                            1 Passenger
+                            <SelectPassenger passengerOptions={passengerOptions}/>
                         </div>
                     </div>
                 </div>
