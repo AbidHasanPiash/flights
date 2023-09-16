@@ -14,3 +14,6 @@
 .flexBetween {
     @apply flex items-center justify-between;
 }
+.flexEnd {
+    @apply flex items-center justify-end;
+}
