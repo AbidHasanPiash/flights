@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function Hotel() {
   return (
-    <div>Hotel</div>
+    <div className='spaceing space-y-4'>Hotel</div>
   )
 }

@@ -46,11 +46,12 @@ export default function Hero() {
           </h1>
           <div className='w-full flex items-center justify-center md:justify-start space-x-1'>
             {tabsData.map((tab, index) => (
-              <TabButton
-                key={index}
-                tab={tab}
-                onPress={() => handleActiveTab(tab.text)}
-              />
+                <TabButton
+                    key={index}
+                    tab={tab}
+                    onPress={() => handleActiveTab(tab.text)}
+                    isActive={tab.text === activeTab}
+                />
             ))}
           </div>
         </div>

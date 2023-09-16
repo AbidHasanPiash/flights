@@ -1,15 +1,27 @@
-import React from 'react'
+'use client'
+import React, { useState } from 'react'
 import { MdOutlineFlightLand, MdOutlineFlightTakeoff, MdOutlineCalendarMonth } from 'react-icons/md'
 import { LuSearch } from 'react-icons/lu'
 import ButtonLight from '../common/ButtonLight'
 
 export default function AirTicket() {
+    const tripOptions = ['One Way','Round Way','Multi City']
+    const [activeOption, setActiveOption] = useState(tripOptions[0]);
+  
+    const handleOptionClick = (option) => {
+      setActiveOption(option);
+    };
   return (
     <div className='spaceing space-y-4'>
         <div className='flex space-x-3'>
-            <ButtonLight text={'One Way'}/>
-            <ButtonLight text={'Round Way'}/>
-            <ButtonLight text={'Multi City'}/>
+            {tripOptions.map((option, index) => (
+                <ButtonLight
+                key={index}
+                text={option}
+                isActive={option === activeOption}
+                onClick={() => handleOptionClick(option)}
+                />
+            ))}
         </div>
         <div className='grid md:grid-cols-3 gap-2 text-night'>
             {/* Selece destination */}
