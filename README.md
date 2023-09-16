@@ -2,6 +2,10 @@
 
 This is a Flight Booking Application built with Next.js, Material-UI, Tailwind CSS, and React.
 
+## Demo
+
+https://flights-abid.vercel.app/
+
 ## Getting Started
 
 To get a local copy of the project up and running, follow these steps:
