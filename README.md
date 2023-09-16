@@ -8,7 +8,7 @@ To get a local copy of the project up and running, follow these steps:
 
 1. Clone the repository:
 ```bash
-    git clone https://github.com/your-username/flight-booking-app.git=
+    git clone https://github.com/AbidHasanPiash/flights.git
 ```
 
 2. Navigate to the project folder:
@@ -28,18 +28,13 @@ To get a local copy of the project up and running, follow these steps:
 
 The application will be accessible at http://localhost:3000 in your web browser.
 
-## Usage
-
-Describe how to use your application. Provide instructions for any special setup, configuration, or usage considerations. Include any environment variables that need to be set and how to set them.
-
 ## Features
 
-List the main features of your application. You can create bullet points or sections to describe each feature in detail.
+Major feature of this project
 
 - Feature 1: Easy access to get a Air Ticker, Hotel Room and Holiday packages.
 - Feature 2: Get update about Hot Deals.
 - Feature 2: Get update about Special Offers.
-- ...
 
 ## Dependencies
 
@@ -50,11 +45,7 @@ List the main features of your application. You can create bullet points or sect
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE.md file for details.
-
-## Contributing
-
-If you'd like to contribute to this project, please follow the Contributing Guidelines in the CONTRIBUTING.md file.
+This project is licensed under the MIT License.
 
 ## Acknowledgments
 
@@ -62,9 +53,9 @@ Mention any resources, libraries, or tutorials that you found helpful or inspiri
 
 ## Contact
 
-- Your Name
-- Email: your.email@example.com
-- LinkedIn: Your LinkedIn Profile URL
+- Abid Hasan
+- Email: mp.abidhasan@gmail.com
+- LinkedIn: https://www.linkedin.com/in/abidhasanpiash/
 
 Feel free to reach out if you have any questions or feedback.
 
