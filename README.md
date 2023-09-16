@@ -7,16 +7,24 @@ This is a Flight Booking Application built with Next.js, Material-UI, Tailwind C
 To get a local copy of the project up and running, follow these steps:
 
 1. Clone the repository:
-git clone https://github.com/your-username/flight-booking-app.git
+```bash
+    git clone https://github.com/your-username/flight-booking-app.git=
+```
 
 2. Navigate to the project folder:
-cd flight-booking-app
+```bash
+    cd flight-booking-app
+```
 
 3. Install dependencies:
-npm install
+```bash
+    npm install
+```
 
 4. Start the development server:
-npm run dev
+```bash
+    npm run dev
+```
 
 The application will be accessible at http://localhost:3000 in your web browser.
 
@@ -28,8 +36,9 @@ Describe how to use your application. Provide instructions for any special setup
 
 List the main features of your application. You can create bullet points or sections to describe each feature in detail.
 
-- Feature 1: Describe what it does.
-- Feature 2: Describe what it does.
+- Feature 1: Easy access to get a Air Ticker, Hotel Room and Holiday packages.
+- Feature 2: Get update about Hot Deals.
+- Feature 2: Get update about Special Offers.
 - ...
 
 ## Dependencies
