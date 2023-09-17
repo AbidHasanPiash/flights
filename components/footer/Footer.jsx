@@ -1,18 +1,25 @@
+// Import necessary modules and components
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { FaSquareFacebook, FaInstagram, FaSquareXTwitter, FaLinkedin } from 'react-icons/fa6'
 
+// Footer component
 export default function Footer() {
   return (
+    // Footer section with specific styling
     <footer className='bg-night text-day py-20'>
         <div className='spaceing'>
             <div className='pb-20 space-y-20'>
+                {/* Grid for organizing footer content */}
                 <div className='grid grid-cols-2 md:grid-cols-4 gap-3'>
+                    {/* About Us section */}
                     <div className='col-span-1'>
                         <h4 className='font-semibold'>About Us</h4>
                         <p className='text-sm py-4'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore quidem deleniti esse animi, neque, velit ut consequatur unde ipsam accusamus nulla nisi molestias tempora atque in sed officia! At, quod.</p>
                     </div>
+
+                    {/* Need Help section */}
                     <div className='col-span-1 flex flex-col'>
                         <h4 className='font-semibold'>Need Help</h4>
                         <p className='text-sm py-4'>
@@ -23,6 +30,8 @@ export default function Footer() {
                         <Link className='text-sm underline py-0.5' href={'tell:+8809606912912'}>+880 9606 912 912</Link>
                         <Link className='text-sm underline py-0.5' href={'tell:+8801755572099'}>+880 1755 572 099</Link>
                     </div>
+
+                    {/* About, Company, and Support sections */}
                     <div className='col-span-2 flexBetween'>
                         <div>
                             <h4 className='font-semibold'>About</h4>
@@ -34,7 +43,7 @@ export default function Footer() {
                             </ul>
                         </div>
                         <div>
-                            <h4 className='font-semibold'>Conpany</h4>
+                            <h4 className='font-semibold'>Company</h4>
                             <ul className='text-sm py-4 space-y-2'>
                                 <li>Why others</li>
                                 <li>Partner with us</li>
@@ -53,6 +62,8 @@ export default function Footer() {
                         </div>
                     </div>
                 </div>
+
+                {/* Payment methods and social media icons */}
                 <div className='grid md:grid-cols-2 gap-4'>
                     <div className='space-y-4'>
                         <h4 className='font-semibold'>We Accept</h4>
@@ -71,8 +82,13 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
+
+            {/* Copyright and attribution */}
             <div className='border-t border-gray-300 pt-6 text-center'>
-                <p>&copy; 2023 All Right Received by BRAC & Developed By Fly Far Tech</p>
+                <p>
+                    <span>&copy; 2023 All Right Received by BRAC & Developed By </span>
+                    <Link target='_blank' href={'https://flyfar.tech/'} className='underline'>Fly Far Tech</Link>
+                </p>
             </div>
         </div>
     </footer>
