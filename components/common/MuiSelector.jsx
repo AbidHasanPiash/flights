@@ -1,10 +1,10 @@
 'use client'
 import React, { useState } from 'react'
-import TextField from '@mui/material/TextField'
+import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 
-export default function SelectPassenger({passengerOptions}) {
-    const [value, setValue] = useState(passengerOptions[0]);
+export default function MuiSelector({Options}) {
+    const [value, setValue] = useState(Options[0]);
     const [inputValue, setInputValue] = useState('');
 
     const customStyles = {
@@ -29,7 +29,7 @@ export default function SelectPassenger({passengerOptions}) {
             setInputValue(newInputValue);
         }}
         id="controllable-states-demo"
-        options={passengerOptions}
+        options={Options}
         sx={{ ...customStyles }}
         className='w-full'
         renderInput={(params) => <TextField {...params} />}

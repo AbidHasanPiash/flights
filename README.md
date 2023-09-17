@@ -12,22 +12,22 @@ To get a local copy of the project up and running, follow these steps:
 
 1. Clone the repository:
 ```bash
-    git clone https://github.com/AbidHasanPiash/flights.git
+git clone https://github.com/AbidHasanPiash/flights.git
 ```
 
 2. Navigate to the project folder:
 ```bash
-    cd flight-booking-app
+cd flights
 ```
 
 3. Install dependencies:
 ```bash
-    npm install
+npm install
 ```
 
 4. Start the development server:
 ```bash
-    npm run dev
+npm run dev
 ```
 
 The application will be accessible at http://localhost:3000 in your web browser.
@@ -38,7 +38,7 @@ Major feature of this project
 
 - Feature 1: Easy access to get a Air Ticker, Hotel Room and Holiday packages.
 - Feature 2: Get update about Hot Deals.
-- Feature 2: Get update about Special Offers.
+- Feature 3: Get update about Special Offers.
 
 ## Dependencies
 
@@ -46,10 +46,6 @@ Major feature of this project
 - Material-UI: https://mui.com/
 - Tailwind CSS: https://tailwindcss.com/
 - React Icons: https://react-icons.github.io/react-icons/
-
-## License
-
-This project is licensed under the MIT License.
 
 ## Acknowledgments
 

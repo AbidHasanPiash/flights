@@ -1,17 +1,26 @@
-import Image from 'next/image'
-import React from 'react'
+'use client'
+import React, { useState } from 'react'
+import ButtonText from '../common/ButtonText';
 
 export default function HotDeals() {
+    const Deals = ['All','Flight','Hotel','Tour','Others']
+    const [activeOption, setActiveOption] = useState(Deals[0]);
+    const handleOptionClick = (option) => {
+      setActiveOption(option);
+    };
   return (
     <section>
         <div className='flex flex-col md:flex-row justify-between space-y-3 md:space-y-0'>
             <h1 className='text-3xl font-semibold'>Hot Deals</h1>
-            <div className='bg-primary/10 text-primary text-sm font-semibold rounded-full space-x-10 py-1.5 px-4 flexCenter'>
-                <button className='bg-primary rounded-full px-3 text-white'>All</button>
-                <button>Flight</button>
-                <button>Hotel</button>
-                <button>Tour</button>
-                <button>Others</button>
+            <div className='bg-primary/10 text-primary text-sm font-semibold rounded-full space-x-5 py-1.5 px-4 flexCenter'>
+                {Deals.map((option, index) => (
+                    <ButtonText
+                        key={index}
+                        text={option}
+                        isActive={option === activeOption}
+                        onClick={() => handleOptionClick(option)}
+                    />
+                ))}
             </div>
         </div>
         <div className='py-6 grid md:grid-cols-2 gap-6'>

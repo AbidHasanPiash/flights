@@ -6,7 +6,7 @@ import { TbMapSearch } from 'react-icons/tb';
 import AirTicket from './AirTicket';
 import Hotel from './Hotel';
 import Holidays from './Holidays';
-import TabButton from './TabButton';
+import TabButton from '../common/TabButton';
 
 const tabsData = [
   { text: 'Air Ticket', icon: <MdOutlineAirplanemodeActive size={20} /> },

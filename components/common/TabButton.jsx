@@ -6,7 +6,7 @@ export default function TabButton({ tab, onPress, isActive }) {
     <button onClick={onPress}>
       <span className={`px-4 py-2 rounded-t-md text-sm flexCenter space-x-2 ${buttonClass}`}>
         <span className={iconClass}>{tab.icon}</span>
-        <span>{tab.text}</span>
+        <span className="text-sm md:text-base">{tab.text}</span>
       </span>
     </button>
   );

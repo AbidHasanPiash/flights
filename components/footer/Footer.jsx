@@ -72,7 +72,10 @@ export default function Footer() {
                 </div>
             </div>
             <div className='border-t border-gray-300 pt-6 text-center'>
-                <p>&copy; 2023 All Right Received by BRAC & Developed By Fly Far Tech</p>
+                <p>
+                    <span>&copy; 2023 All Right Received by BRAC & Developed By </span>
+                    <Link target='_blank' href={'https://flyfar.tech/'} className='underline'>Fly Far Tech</Link>
+                </p>
             </div>
         </div>
     </footer>
